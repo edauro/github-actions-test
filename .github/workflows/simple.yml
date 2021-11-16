@@ -1,12 +1,12 @@
 name: Shell Commands
-on: push
+on: [pull_request]
 
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: echo "Hello World"
+        run: echo "Hello World, How are things?"
       - name: multiline script
         run: |
           node -v
@@ -21,6 +21,7 @@ jobs:
     runs-on: windows-latest
     needs: "run-shell-command"
     steps:
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - name: Directory PowerShell
         run: Get-Location
       - name: Directory Bash
