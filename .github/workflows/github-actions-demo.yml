@@ -2,7 +2,7 @@ name: GitHub Actions Demo
 on: 
  push:
  pull_request:
-   types: [closed, assigned, opened, reopened]
+   types: [closed, opened, reopened]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
