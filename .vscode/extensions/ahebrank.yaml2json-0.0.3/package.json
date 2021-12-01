@@ -1,0 +1,68 @@
+{
+	"name": "yaml2json",
+	"displayName": "YAML to JSON",
+	"description": "Convert YAML from clipboard or current document/selection to JSON and vice versa.",
+	"version": "0.0.3",
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"publisher": "ahebrank",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:yaml2json.document",
+		"onCommand:yaml2json.clipboard"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "yaml2json.document",
+				"title": "YAML to JSON: Convert selection or document"
+			},
+			{
+				"command": "yaml2json.clipboard",
+				"title": "YAML to JSON: Convert clipboard"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^10.14.8",
+		"typescript": "^3.5.1",
+		"vscode": "^1.1.34"
+	},
+	"dependencies": {
+		"clipboardy": "^1.2.3",
+		"lodash.unescape": "^4.0.1",
+		"yamljs": "^0.3.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ahebrank/vscode-yaml2json"
+	},
+	"keywords": [
+		"vscode",
+		"yaml2json"
+	],
+	"author": "Andy Hebrank",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ahebrank/vscode-yaml2json/issues"
+	},
+	"homepage": "https://github.com/ahebrank/vscode-yaml2json",
+	"__metadata": {
+		"id": "a4f0c51b-9bfb-4f23-b646-0d3bbbc40142",
+		"publisherId": "ff9e43ae-c9f1-44cb-b34a-72a3f5dd93f8",
+		"publisherDisplayName": "ahebrank",
+		"installedTimestamp": 1622279889941
+	}
+}

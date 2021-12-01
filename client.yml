@@ -1,0 +1,37 @@
+name: johnjoe
+age: 56
+address: Cork
+active: true
+House:
+    Rooms: 4
+    windows: 5
+    RoomTypes:
+        bedrooms: 2
+        bathroom: 1
+        kitchen: 1
+car:
+    model: auris
+    fuel: value
+    wheels:
+        number: 4
+        alloy: yes
+interests:
+    - walking
+    - dancing
+    -
+        key: value
+        key1: value
+habits:
+    - smoking
+    - drinking
+    - drugs
+objectsArray:
+    -
+        key: value
+        key2: value
+        key3: value
+    -
+        key: value
+    -
+        key: value
+longtext: "l;dkjfgl;dsjglkjdglk;dsfg sdfgsdfgsdfgdsf dxfgsdfgsdfgdsf sdfgdsfgsdfgdsfgdf\n"
